@@ -1,4 +1,4 @@
-import pyautogui
+from pyautogui import write, press
 from time import sleep
 
 print("Кто прочитал тот приёмный! by NightMaidBot#7660")
@@ -11,8 +11,8 @@ def turbo(count, speed):
     while count!= 10001:
         print(count)
         count=str(count)
-        pyautogui.write(count)
-        pyautogui.press('enter')
+        write(count)
+        press('enter')
         sleep(speed)
         count=int(count)
         count=count+1;
